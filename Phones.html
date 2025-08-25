@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Temporary for testing -->
+</head>
+
+<style>
+  #alert {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    display: none;
+  }
+</style>
+
+<body class="sm:bg-gray-100 pb-4">
+
+  <nav
+    class="sm:flex sm:items-center sm:justify-between sm:p-4 sm:bg-gray-900 sm:text-white relative top-0 left-0 right-0">
+    <div class="sm:flex sm:items-center sm:gap-4">
+      <div>
+        <img src="./images/envato-labs-ai-f2f3f349-bb2e-412e-8c6a-ae4ead3f689c.jpg" alt="Logo"
+          class="sm:w-16 sm:rounded-full">
+
+      </div>
+      <div>
+      <input type="text" id="search" placeholder="Search products" autocomplete="off"
+        class="sm:px-3 sm:py-2 sm:rounded-lg sm:text-black sm:focus:outline-none sm:focus:ring-2 sm:focus:ring-blue-400 sm:ml-32"
+        style="width: 800px;">
+            <button type="button" id="loginsignup" onclick="search()"
+      class="sm:bg-blue-500 sm:hover:bg-blue-600 sm:px-4 sm:py-2 sm:rounded-lg">
+      Submit
+    </button>
+    </div>
+    <button type="button" id="loginsignup" onclick="signup()"
+      class="sm:bg-blue-500 sm:hover:bg-blue-600 sm:px-4 sm:py-2 sm:rounded-lg">
+      Sign Up
+    </button>
+  </nav>
+
+  <div class="animate-pulse" id="alert">
+    <!-- <h2>Notice</h2> -->
+    <p>Thanks For Your Patronage</p>
+    <!-- <button>OK</button> -->
+  </div>
+
+
+  <h1 class="text-center text-6xl">Our Phones</h1>
+
+
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+
+
+  <div class="">
+    <!-- <h1 class="sm:text-center sm:text-8xl sm:mt-20">Products</h1> -->
+
+    <!-- <h1 class="sm:text-center sm:text-4xl sm:mt-10">Phones</h1> -->
+    <div class="sm:grid sm:grid-cols-3  mt-20 mx-40">
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/azwedo-l-lc-nT4WsKUoLo4-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-bl-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Redmi</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/aaditya-ailawadhi-D6pgxi3gwNQ-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64  hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">iPhones</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sm:w-72 sm:h-auto sm:border sm:border-black sm:shadow-2xl sm:shadow-black ">
+        <img src="images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="" srcset=""
+          class="sm:w-72 sm:h-64 sm:rounded-br-3xl hover:w-80 sm:cursor-pointer">
+        <div class="pt-6">
+          <h1 class="sm:text-center sm:text-4xl font-bold outline-red-700">Samsungs</h1>
+          <p class="sm:p-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex dolores accusantium doloremque
+            suscipit, nostrum corrupti beatae tenetur et vero dicta!</p>
+          <div class="sm:flex sm:justify-between sm:p-4">
+            <a href="http://" target="_blank" rel="noopener noreferrer" onclick="seemore()"
+              class="sm:underline sm:hover:text-slate-400 sm:text-yellow-700 sm:active:text-sky-600">See More</a>
+            <button type="button" id="seemore" onclick="seemore()"
+              class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full animate-pulse border border-black">
+              <img src="./images/download.jpeg" alt="" srcset="" class="sm:h-10 sm:w-10   sm:rounded-full">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <script src="phone.js"></script>
+
+   <script src="login.js"></script>
+   <script src="signup.js"></script>
+
+
+
+
+  <!-- Footer (Wave) -->
+  <footer class="mt-10">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#1a1a1a" fill-opacity="1"
+        d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320V0H0Z">
+      </path>
+    </svg>
+  </footer>
+
+
+
+
+
+
+  <script src="signup.js"></script>
+  <script src="main2.js"></script>
+</body>
+
+</html>

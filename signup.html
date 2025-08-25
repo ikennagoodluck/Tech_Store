@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign up</title>
+   <link rel="stylesheet" href="login.css">
+</head>
+
+<body class="  h-svh w-svw bg-gray-100">
+   <div class="flex items-center">
+      <button id="button" type="button"
+         class=" border-black text-4xl  w-5 h-10  p-0.5 px-2   hover:bg-gray-700 transition-all duration-1000  "
+         onclick="previous()"> ↩️ </button>
+   </div>
+   <div class="flex justify-center items-center h-svh bg-gray-100">
+      <div id="Signuppage"
+         class="w-96 flex flex-col font-serif border-black border rounded-xl pt-4 pl-3 pr-3 pb-4  items-center bg-gradient-to-r from-purple-400 to-pink-500 shadow-md shadow-black hover:-translate-y-2 transition-all duration-1000 h-60" style="width: 500px;">
+         <h1 id="head" class="text-center text-4xl font-serif font-bold mb-2.5">Sign Up</h1>
+         <form action="" class="flex flex-col gap-3">
+            <div class="flex flex-col" style="width: 400px;">
+               <label for="" class="text-sm">Email</label>
+               <input type="email" name="" id="email" autocomplete="off" required placeholder="emal"
+                  class="border border-black rounded-md p-0.5 px-2">
+            </div>
+            <div class="flex flex-col">
+               <label for="" class="text-sm">Password</label>
+               <input type="password" id="password" required placeholder="password"
+                  class="border border-black rounded-md p-0.5 px-2">
+            </div>
+         </form>
+         <button id="button" type="button"
+            class="border border-black rounded-md p-0.5 px-2 mt-2 hover:bg-red-700 transition-all duration-1000"
+            onclick="signup()">Sign Up</button>
+      </div>
+   </div>
+
+
+
+   <script src="login.js"></script>
+   <script src="signup.js"></script>
+</body>
+
+</html>
