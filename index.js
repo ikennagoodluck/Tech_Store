@@ -15,7 +15,7 @@ let intervalid;
 
 
 function alerttt() {
-   if (window.location.href.includes("main2.html")) {
+   if (window.location.href.includes("index.html")) {
       let alertBox = document.getElementById("alert");
 
       if (alertBox) {
