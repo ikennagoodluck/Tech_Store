@@ -21,5 +21,5 @@ function signup() {
 
 
 function previous() {
-   window.location.href = "main.html"
+   window.location.href = "index.html"
 }

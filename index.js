@@ -1,7 +1,7 @@
-function signup() {
-   // alert("Sign up button clicked!");
-   window.location.href = ("signup.html")
-}
+   function signup() {
+      window.location.href = "signup.html"
+   }
+
 
 let intervalid;
 
@@ -30,7 +30,7 @@ function alerttt() {
 }
 
 function seemore() {
-   window.location.href = "main2.html"
+   window.location.href = "index.html"
 }
 
 

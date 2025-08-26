@@ -51,7 +51,7 @@ function search() {
       window.location.href = "headPhones.html"
    }
    else if (search == "all") {
-      window.location.href = "main2.html"
+      window.location.href = "index.html"
    }
    else if (search == "earpods") {
       window.location.href = "earpods.html"
