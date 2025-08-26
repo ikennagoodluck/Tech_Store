@@ -56,6 +56,9 @@ function search() {
    }
    else if (search == "earpods" || search == "Earpods" || search == "EARPODS" || search == "earpod" || search == "Earpod" || search == "EARPOD"|| search == "ear pods" || search == "Ear pods" || search == "Ear Pods" || search == "EAR PODS" || search == "ear Pod" || search == "Ear Pod" || search == "EAR POD") {
       window.location.href = "earpods.html"
+   } 
+   else if (search == "Products"){
+      window.location.href = "#products"
    }
    else {
       alert("Sorry User You can Only Serach for Phones Earpods and Headphones")
