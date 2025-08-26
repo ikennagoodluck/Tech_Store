@@ -25,23 +25,23 @@
   }
 </style>
 
-<body class="sm:bg-gray-100 pb-4">
+<body class="sm:bg-gray-100 pb-4 bg-gray-100">
 
   <nav
-    class="sm:flex sm:items-center sm:justify-between sm:p-4 sm:bg-gray-900 sm:text-white relative top-0 left-0 right-0">
-    <div class="sm:flex sm:items-center sm:gap-4">
+    class="sm:flex sm:flex-row sm:h-30 sm:items-center sm:mx-auto sm:justify-between sm:p-4 sm:bg-gray-900 sm:text-white flex flex-col justify-between items-center p-auto h-auto >
+    <div class="sm:flex sm:items-center sm:gap-10">
       <div>
         <img src="./images/envato-labs-ai-f2f3f349-bb2e-412e-8c6a-ae4ead3f689c.jpg" alt="Logo"
-          class="sm:w-16 sm:rounded-full">
+          class="sm:w-16 sm:rounded-full w-16 rounded-full mb-4">
 
       </div>
       <div>
         <input type="text" id="search" placeholder="Search products" autocomplete="off"
-          class="sm:px-3 sm:py-2  sm:rounded-3xl sm:text-black sm:focus:outline-none sm:focus:ring-2 sm:focus:ring-blue-400 sm:ml-32"
-          style="width: 800px;">
-        <button class="sm:bg-sky-100 px-3 py-2 translate-y-1 absolute top-6 z-30 rounded-br-3xl rounded-tr-3xl"
-          style="margin-left: -49px;" onclick="search()">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+          class="sm:px-3 sm:py-2 mb-4  sm:rounded-3xl sm:text-black outline-none sm:w-96 sm:ml-32 w-72 mx-auto py-2 px-3 "
+          >
+        <button class="sm:bg-sky-100 bg-sky-100 mb-6 sm:py-2 px-2 sm:translate-y-1 -translate-x-5 w-12 py-2 sm:absolute sm:top-6 sm:z-30 sm:rounded-br-3xl sm:rounded-tr-3xl"
+           onclick="search()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1a1a1a">
             <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 
           75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 
           127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
@@ -50,7 +50,7 @@
       </div>
     </div>
     <button type="button" id="loginsignup" onclick="signup()"
-      class="sm:bg-blue-500 sm:hover:bg-blue-600 sm:px-4 sm:py-2 sm:rounded-lg">
+      class="sm:bg-blue-500 mb-12 bg-blue-500 sm:w-40 mx-auto sm:mx-20 sm:hover:bg-blue-600 hover:bg-blue-600 sm:px-4  sm:py-2 py-2 sm:rounded-lg rounded-lg w-20">
       Sign Up
     </button>
   </nav>
@@ -63,21 +63,21 @@
 
 
   <!-- firstdiv -->
-  <div class="sm:sm:flex sm:gap-4 sm:m-4 sm:justify-center sm:mb-20">
-    <div class="sm:border sm:border-black sm:h-96 sm:w-60 sm:rounded-xl sm:overflow-hidden">
-      <img src="images/boy.png" alt="" srcset="" class="sm:w-60 sm:border sm:border-black sm:h-40 sm:rounded-bl-full">
-      <h1 class="sm:font-sans sm:font-bold sm:text-center sm:mt-4">Join us and shape the world</h1>
-      <p class="sm:p-2 sm:text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ipsa
+  <div class="sm:sm:flex sm:gap-4 mb-16 sm:m-4 sm:justify-center sm:mb-20 grid grid-rols-3 gap-4 ml-2 ">
+    <div class="sm:border sm:border-black sm:h-96 h-96 sm:w-60 sm:rounded-xl sm:overflow-hidden w-60 border ml-6 border-black rounded-xl overflow-hidden">
+      <img src="images/boy.png" alt="" srcset="" class="sm:w-60 w-60 sm:border border border-black sm:border-black sm:h-40 h-40 rounded-bl-full sm:rounded-bl-full">
+      <h1 class="sm:font-sans font-sans sm:font-bold font-bold sm:text-center text-center sm:mt-4 mt-4">Join us and shape the world</h1>
+      <p class="sm:p-2 p-2 sm:text-center text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ipsa
         provident
         repellendus error? Nobis ab sunt est!</p>
       <button type="button" id="seemore" onclick=""
-        class="sm:bg-yellow-500 sm:hover:bg-yellow-600 sm:px-4 sm:py-2 sm:rounded-lg sm:translate-x-16">
+        class="sm:bg-yellow-500 bg-yellow-500 sm:hover:bg-yellow-600 bg-yellow-600 sm:px-4 px-4 sm:py-2 py-2 sm:rounded-lg rounded-lg sm:translate-x-16 translate-x-16">
         See more
       </button>
     </div>
 
 
-    <div class="sm:border sm:border-black " style="width: 50%; height: 380px;" id="slide">
+    <div class="sm:border border sm:border-black border-black sm:96 w-72" id="slide" >
       <img src="./images/10238919.jpg" alt="" srcset="" style="height: 379px; width: 100%;" id="image">
       <!-- <img src="images/boy.png" alt="" srcset="" class="w-60 border border-black h-40 rounded-bl-full"> -->
       <!-- <img src="images/Black E-Tech Logo.png" alt="" srcset="" class=" border border-black" style="background-image: url(./images/Black\ E-Tech\ Logo.png);"> -->
@@ -91,34 +91,34 @@
 
 
 
-    <div class="sm:border sm:border-black sm:h-96 sm:w-60 sm:rounded-xl sm:overflow-hidden">
+    <div class="sm:border sm:border-black sm:h-96 h-96 sm:w-60 sm:rounded-xl sm:overflow-hidden w-60 border ml-6 border-black rounded-xl overflow-hidden">
       <img src="images/—Pngtree—gaming laptop with futuristic design_20835012.png" alt="" srcset=""
-        class="sm:w-60 sm:border sm:border-black sm:h-40"
+        class="sm:w-60 w-60 sm:border border sm:border-black border-black h-40 bg-gray-900 sm:h-40"
         style="background-image: url(./images/codioful-formerly-gradienta-bKESVqfxass-unsplash.jpg);">
-      <h1 class="sm:font-sans sm:font-bold sm:text-center sm:mt-4">Join us and shape the world</h1>
-      <p class="sm:p-2 sm:text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ipsa
+      <h1 class="sm:font-sans font-sans sm:font-bold font-bold sm:text-center text-center sm:mt-4 mt-4">Join us and shape the world</h1>
+      <p class="sm:p-2 p-2 sm:text-center text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ipsa
         provident
         repellendus error? Nobis ab sunt est!</p>
       <button type="button" id="seemore" onclick="alertt()"
-        class="sm:bg-yellow-500 sm:hover:bg-yellow-600 sm:px-4 sm:py-2 sm:rounded-lg sm:translate-x-16">
+        class="sm:bg-yellow-500 bg-yellow-500 sm:hover:bg-yellow-600 hover:bg-yellow-600 sm:px-4 px-4 sm:py-2 py-2 sm:rounded-lg rounded-lg sm:translate-x-16 translate-x-16">
         See more
       </button>
     </div>
   </div>
 
   <div>
-    <div class="sm:flex sm:justify-center sm:ml-96 sm:translate-x-80 sm:mt-10 sm:animate-bounce">
-      <button type="button" id="seemore" class="  sm:bg-red-600 sm:hover:bg-red-500 sm:h-10 sm:w-10   sm:rounded-full ">
+    <div class="sm:flex flex sm:justify-center justify-center sm:ml-96  sm:translate-x-80 translate-x-80 sm:mt-10  sm:animate-bounce animate-bounce hidden">
+      <button type="button" id="seemore" class="  sm:bg-red-600 bg-red-600 sm:hover:bg-red-500 bg-red-500 sm:h-10 h-10 sm:w-10 w-10   sm:rounded-full rounded-full ">
         20%
       </button>
     </div>
-    <div class="sm:flex justify-center items-center gap-40">
-      <div class="sm:border sm:border-black  sm:w-80 sm:h-48 sm:p-4 sm:rounded-xl sm:overflow-hidden">
+    <div class="sm:flex grid sm:justify-center grid-rols-2  items-center gap-4 sm:gap-40">
+      <div class="sm:border border sm:border-black border-black  sm:w-80 w-80 sm:h-48 h-48 sm:p-4 p-4 sm:rounded-xl rounded-xl sm:overflow-hidden overflow-hidden">
         <!-- <img src="images/download (1).jpg" alt="" srcset="" class="w-60 border border-black h-40"> -->
-        <h1 class="sm:font-sans sm:font-bold sm:text-center sm:mt-4">Join us and shape the world</h1>
+        <h1 class="sm:font-sans font-sans sm:font-bold font-bold sm:text-center text-center sm:mt-4 mt-4">Join us and shape the world</h1>
         <p class="p-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corporis.</p>
         <button type="button" id="seemore" onclick="seemore()"
-          class="sm:bg-yellow-500 sm:hover:bg-yellow-600 sm:px-4 sm:py-2 sm:rounded-lg sm:translate-x-24">
+          class="sm:bg-yellow-500 bg-yellow-500 sm:hover:bg-yellow-600 hover:bg-yellow-600 sm:px-4 px-4 sm:py-2 py-2 sm:rounded-lg rounded-lg sm:translate-x-24 translate-x-24">
           See more
         </button>
       </div>
@@ -126,16 +126,16 @@
 
 
       <div
-        class="sm:border sm:border-black  sm:w-96 sm:h-48 sm:pb-4 sm:rounded-xl sm:overflow-hidden sm:grid sm:grid-cols-2">
+        class="sm:border border sm:border-black border-black  sm:w-96 w-80 sm:h-48 h-96 sm:pb-4 pb-4 sm:rounded-xl rounded-xl sm:overflow-hidden overflow-hidden sm:grid sm:grid-cols-2">
 
-        <img src="images/laptop-with-toy-sign.jpg" alt="" srcset="" class="sm:w-80 sm:border sm:border-black h-56">
-        <div class="sm:p-2">
-          <h1 class="sm:font-sans sm:font-bold sm:text-center sm:mt-4">Black friday available @ tech store.com Get your
+        <img src="images/laptop-with-toy-sign.jpg" alt="" srcset="" class="sm:w-80 w-80 sm:border border sm:border-black border-black h-56">
+        <div class="sm:p-2 p-2">
+          <h1 class="sm:font-sans font-sans sm:font-bold font-bold sm:text-center text-center sm:mt-4 mt-4">Black friday available @ tech store.com Get your
             own with 20%
             discount.</h1>
           <!-- <p class="p-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, corporis.</p> -->
           <button type="button" id="seemore" onclick="seemore()"
-            class="sm:bg-yellow-500 sm:hover:bg-yellow-600 sm:px-4 sm:py-2 sm:my-2 sm:rounded-lg sm:justify-self-center sm:flex">
+            class="sm:bg-yellow-500 bg-yellow-500 sm:hover:bg-yellow-600 bg-yellow-600 sm:px-4 px-4 sm:py-2 py-2 sm:my-2 my-2 sm:rounded-lg rounded-lg sm:justify-self-center justify-self-center flex sm:flex">
             See more
           </button>
         </div>
